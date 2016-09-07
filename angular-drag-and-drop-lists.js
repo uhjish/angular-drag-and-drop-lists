@@ -7,7 +7,7 @@
  *
  * License: MIT
  */
-angular.module('dndLists', [])
+angular.module('dndlists', [])
 
   /**
    * Use the dnd-draggable attribute to make your element draggable
@@ -588,3 +588,7 @@ angular.module('dndLists', [])
    * https://code.google.com/p/chromium/issues/detail?id=39399
    */
   .factory('dndDropEffectWorkaround', function(){ return {} });
+
+if (typeof module === 'object') {
+    module.exports='dndlists'
+}
